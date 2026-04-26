@@ -1,18 +1,49 @@
-# Facial Emotion Recognition (v1.0) 🤖
+# Facial Emotion Recognition 🤖
 
-This project implements a real-time emotion detection system using Deep Learning (CNN/SVM). It captures video from the webcam, detects faces, and classifies expressions into categories like Happy, Sad, Angry, Neutral, etc.
+A real-time facial emotion detection system that uses webcam input to identify human emotions such as Happy, Sad, Angry, and Neutral using deep learning-based face analysis.
 
-🚀 Key Features
-- **Real-time Detection:** Processes frames on the fly using OpenCV.
-- **Accuracy:** Currently achieving a **60% baseline accuracy** on the test dataset.
-- **Lightweight Architecture:** Optimized for local machine execution without high-end GPUs.
+---
 
- 🛠️ Tech Stack
-- **Language:** Python
-- **Core Libraries:** OpenCV, Keras/TensorFlow (or whatever you used), NumPy.
-- **Logic:** Haar-Cascade Classifiers for face detection.
+## 🚀 Features
 
- 📈 Future Improvements
-- Fine-tuning the model with more diverse datasets (FER-2013).
-- Adding multi-face detection support.
-- Increasing prediction confidence to 85%+.
+* 🎥 Real-time webcam-based emotion detection
+* 😊 Detects multiple emotions (Happy, Sad, Angry, Neutral, etc.)
+* ⚡ Lightweight and runs on CPU
+* 🧠 Uses pre-trained deep learning model for inference
+
+---
+
+## 🛠️ Tech Stack
+
+* Python
+* OpenCV
+* DeepFace
+* NumPy
+
+---
+
+## ⚙️ How it works
+
+1. Captures video from webcam
+2. Detects face in each frame
+3. Sends frame to DeepFace model
+4. Predicts dominant emotion
+5. Displays result on screen in real time
+
+---
+
+## ▶️ How to Run
+
+```bash
+pip install opencv-python deepface numpy
+python emotiondetector.py
+```
+
+---
+
+## 📈 Future Improvements
+
+* Improve speed optimization for real-time performance
+* Add multi-face detection support
+* Add emotion history graph
+* Build a GUI or web interface
