@@ -1,17 +1,22 @@
-# Python Virtual Environment
-myenv/
+# Virtual environments
 venv/
-.venv/
 env/
-ENV/
-
-# Windows specific
-[Vv]env/
-Scripts/
-Lib/
-Include/
-pyvenv.cfg
+.venv/
+myenv/
 
 # Python cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
